@@ -127,8 +127,7 @@ def train():
     accuracy = np.mean(predictions==y_test)
 
     print(f'validation, acc: {accuracy:.3f}, loss: {loss:.3f}')
-    #x = [[2, 2, 4, 2, 1, 3, 3, 1, 2, 3, 1, 2, 4, 4, 1, 2, 3, 3, 1, 1]]
-    #print(predict(x,layer1,layer2, activation1, activation2)) 
+
     #Saving the model to future use predicting
     classification_model= Model(layer1,layer2, activation1, activation2)
     model_out = open('model.pickle','wb')
